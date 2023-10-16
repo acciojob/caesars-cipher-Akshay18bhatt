@@ -36,7 +36,11 @@ function rot13(encodedStr) {
 	encodedStr= encodedStr.toUpperCase();
 
 	for(int i=0;i<encodedStr.length;i++){
+		if(encodedStr[i]>=65 && encodedStr[i]<=90)
 		decodedArr.push(lookup.encodedStr[i]);
+		else{
+			decodedArr.push(encodedStr[i]);
+		}
 	}
 	return decodedArr;
   // Only change code below this line
