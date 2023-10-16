@@ -33,6 +33,12 @@ const lookup = {
 
 function rot13(encodedStr) {
   let decodedArr = []; // Your Result goes here
+	encodedStr= encodedStr.toUpperCase();
+
+	for(int i=0;i<encodedStr.length;i++){
+		decodedArr.push(lookup.encodedStr[i]);
+	}
+	return decodedArr;
   // Only change code below this line
 
   return; //return decodedArr
